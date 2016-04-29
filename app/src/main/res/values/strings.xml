@@ -19,6 +19,6 @@
             50969 Köln
         ]]>
     </string>
-    <string name="close_to_beacon_text">You are closest to</string>
+    <string name="image_of_ibeacon_desc">Image of iBeacon</string>
 
 </resources>

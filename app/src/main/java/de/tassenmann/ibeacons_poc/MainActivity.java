@@ -17,7 +17,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.util.List;
 import java.util.UUID;
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private BeaconManager beaconManager;
     private Region region;
     private ImageView imageView;
-    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -67,7 +65,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         assert navigationView != null;
         navigationView.setNavigationItemSelectedListener(this);
 
-        textView = (TextView) findViewById(R.id.textView);
         imageView = (ImageView) findViewById(R.id.imageView);
 
         beaconManager = new BeaconManager(this);
@@ -106,7 +103,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                                 Log.wtf("wtf", "nearest beacon: " + IBeacons.MINT_REGION.getIdentifier()); // wtf
                             }
 
-                            textView.setText(R.string.close_to_beacon_text);
                             imageView.setImageResource(iBeaconDrawableResId);
                             imageView.setVisibility(View.VISIBLE);
                         }
@@ -189,9 +185,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem item)
     {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        /*if (id == R.id.nav_blueberry)
+        /*int id = item.getItemId();
+        if (id == R.id.nav_blueberry)
         {
         }
         else if (id == R.id.nav_ice)
