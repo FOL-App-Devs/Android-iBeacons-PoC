@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">iBeacons PoC</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_about">About</string>
+
+    <string name="about_text">
+        <![CDATA[
+            <p><b>iBeacons PoC</b><br />
+            Version: 0.1<br />
+            <br />
+            Sotra Ouy<br />
+            sotra.ouy@burda-forward.de<br />
+            <br />
+            ForwardNews+ GmbH<br />
+            Zollstockgürtel 59<br />
+            50969 Köln
+        ]]>
+    </string>
+    <string name="close_to_beacon_text">You are closest to</string>
+
+</resources>
